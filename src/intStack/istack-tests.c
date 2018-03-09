@@ -27,9 +27,9 @@ int main( )
    istackPrint(istack);
 
    assert(!istackIsEmpty(istack));
-
+   
    printf("Pop: %d\n", istackPop(&istack));
-
+   
    istackPush(&istack, 99);
    istackPush(&istack, 98);
    istackPush(&istack, 97);

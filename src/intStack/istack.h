@@ -13,7 +13,17 @@
  * PRIVATE TYPE DECLARATION
  ********************/
 
+struct item_s {
+	int data;
+	struct item_s* next;    
+} ;
+typedef struct item_s Item;
 
+struct IntStack_s {
+	Item* top;
+	int len;
+} ;
+typedef struct IntStack_s IntStack_t;
 
 
 /*********************
